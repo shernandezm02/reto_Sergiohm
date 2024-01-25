@@ -1,10 +1,10 @@
 # Definir variables
 NOMBRE_VPC="MiVPC"
-CIDR_VPC="10.70.0.0/16"
+CIDR_VPC="10.13.0.0/16"
 NOMBRE_SUBRED_PUBLICA="SubredPublica"
-CIDR_SUBRED_PUBLICA="10.70.1.0/24"
+CIDR_SUBRED_PUBLICA="10.13.10.0/24"
 NOMBRE_SUBRED_PRIVADA="SubredPrivada"
-CIDR_SUBRED_PRIVADA="10.70.2.0/24"
+CIDR_SUBRED_PRIVADA="10.13.20.0/24"
 DEBIAN="ami-058bd2d568351da34"
 UBUNTU="ami-0c7217cdde317cfec"
 AMAZON-LINUX="ami-0a3c3a20c09d6f377"
@@ -53,12 +53,4 @@ aws ec2 create-route --route-table-id $routeTablePrivadaId --destination-cidr-bl
  
 # Asociar tabla de rutas privada a la subred privada
 aws ec2 associate-route-table --subnet-id $subnetPrivadaId --route-table-id $routeTablePrivadaId
- 
-aws ec2 run-instances \
-    --image-id $DEBIAN \
-    --count 1 \
-    --instance-type t2.micro \
-    --key-name Reto2 \
-    --subnet-id subnet-01eec70dc55639a8d \
-    --associate-public-ip-address
  

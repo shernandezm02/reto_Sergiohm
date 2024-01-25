@@ -2,12 +2,14 @@
  
 # Variables
 vpc_name="VPC-RETO"
-instance_name="Proxy-script"
-key_pair_name="RetoASIR"
+instance_name="Proxy-script-Sergio"
+key_pair_name="RetoASIR13"
 ami_id="ami-0c7217cdde317cfec"  # ID de la AMI que deseas usar
 instance_type="t2.medium"
 subnet_id="subnet-0fb09035d4171c8e8"  # ID de la subred donde se lanzarán las instancias
  
+# Crear el par de claves
+aws ec2 create-key-pair --key-name $key_pair_name
 # Obtener la ID de la VPC
 vpc_id=$(aws ec2 describe-vpcs --filters "Name=tag:Name,Values=$vpc_name" --query 'Vpcs[0].VpcId' --output text)
  
