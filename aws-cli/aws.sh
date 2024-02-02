@@ -1,3 +1,7 @@
+#Script VPC y Subredes
+#Autor: Sergio Alejandro Hernandez Moreno
+#19/01/2024
+#----------------------------------------------------
 # Definir variables
 NOMBRE_VPC="MiVPC"
 CIDR_VPC="10.13.0.0/16"

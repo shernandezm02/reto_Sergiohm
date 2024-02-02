@@ -1,3 +1,6 @@
+#Autor: Sergio Alejandro Hernandez Moreno
+#19/01/2024
+#----------------------------------------------------
 #!/bin/bash
 apt-get install gnupg2 wget apt-transport-https -y
 wget -qO /usr/share/keyrings/matrix-org-archive-keyring.gpg https://packages.matrix.org/debian/matrix-org-archive-keyring.gpg

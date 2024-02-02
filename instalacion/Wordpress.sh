@@ -1,3 +1,6 @@
+#Autor: Sergio Alejandro Hernandez Moreno
+#19/01/2024
+#----------------------------------------------------
 #!/bin/bash
 
 # Actualizar el sistema

@@ -1,3 +1,7 @@
+#Script creacion de instancias y par de claves
+#Autor: Sergio Alejandro Hernandez Moreno
+#19/01/2024
+#----------------------------------------------------
 #!/bin/bash
  
 # Variables

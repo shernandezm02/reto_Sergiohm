@@ -1,3 +1,6 @@
+#Autor: Sergio Alejandro Hernandez Moreno
+#19/01/2024
+#----------------------------------------------------
 #!/bin/bash
 cd /etc/matrix-synapse/conf.d
 echo "turn_uris: [ "turns:equipo2turn.duckdns.org?transport=udp", "turns:equipo2turn.duckdns.org?transport=tcp" ] #cambiar dominio

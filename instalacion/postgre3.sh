@@ -1,3 +1,6 @@
+#Autor: Sergio Alejandro Hernandez Moreno
+#19/01/2024
+#----------------------------------------------------
 #!/bin/bash
 sudo useradd -G sudo -m synapse -p 1234 -s /usr/bin/bash
 cd /etc/postgresql/16/main

@@ -1,7 +1,7 @@
 #!/bin/bash
-
-#Sergio Alejandro Hernandez Moreno
-
+#Autor: Sergio Alejandro Hernandez Moreno
+#19/01/2024
+#----------------------------------------------------
 sudo apt update
 sudo apt upgrade -y
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
